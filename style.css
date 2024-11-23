@@ -91,11 +91,6 @@ h2 {
     margin-bottom: 3rem;
 }
 
-h3 {
-    font-family: var(--font-text);
-    font-size: 24px;
-}
-
 main section {
     margin: 4rem 10rem;
     padding: 4rem 2rem;
@@ -138,6 +133,11 @@ section:nth-child(3) {
    line-height: 1.2;
 }
 
+h3 {
+    font-family: var(--font-text);
+    font-size: 24px;
+}
+
 .project-container {
     display: flex;
     flex-direction: row;
@@ -154,7 +154,7 @@ section:nth-child(3) {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
-    text-align:start;
+    text-align: start;
     line-height: 1.2;
     max-height: 515px;
     max-width: 400px;
@@ -240,26 +240,37 @@ section:nth-child(3) {
 .html {
     width: 60%;
     animation: html 3s;
+    animation-delay: 3s;
 }
 
 .css {
     width: 60%;
     animation: css 3s;
+    animation-delay: 3.5s;
 }
 
 .javascript {
     width: 40%;
     animation: javascript 3s;
+    animation-delay: 4s;
 }
 
 .react {
     width: 15%;
     animation: react 3s;
+    animation-delay: 4.5s;
+}
+
+.node {
+    width: 10%;
+    animation: node 3s;
+    animation-delay: 5s;
 }
 
 .figma {
     width: 70%;
     animation: figma 3s;
+    animation-delay: 5.5s;
 }
 
 @keyframes html {
@@ -301,6 +312,16 @@ section:nth-child(3) {
     }
 }
 
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+
 @keyframes figma {
     0% {
         width: 0%;
@@ -334,16 +355,13 @@ button:hover {
     z-index: 3;
 }
 
-/*footer.expanded {
-    height: 500px; 
-}*/
-
 footer {
     position: relative;
     color: var(--color-light);
     background-color: var(--color-dark);
     height: 500px;
     width: 100%;
+    margin-top: 6rem;
     padding: 4rem 12rem;
     overflow: hidden;
 }

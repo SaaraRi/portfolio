@@ -93,11 +93,6 @@ h2 {
     margin-bottom: 3rem;
 }
 
-h3 {
-    font-family: var(--font-text);
-    font-size: 24px;
-}
-
 main section {
     margin: 4rem 10rem;
     padding: 4rem 2rem;
@@ -123,7 +118,6 @@ main section {
     background-size: contain;
     height: 45vh;
 }
-
 
 .grid-container {
     display: grid;
@@ -274,11 +268,14 @@ main section {
 
 .grid-container a {
    display: contents;
+   cursor: pointer;
+   pointer-events: auto;
 }
-
+/*
 .grid-item:any-link {
     cursor: pointer;
- }
+    pointer-events: auto;
+ }*/
 
 .grid-item {
     position: relative;
@@ -288,6 +285,7 @@ main section {
     perspective: 1000px;
     transform-style: preserve-3d; 
     transition: transform 1s;
+    pointer-events: auto;
 }
 
 .grid-item.up:hover {
@@ -300,7 +298,6 @@ main section {
     perspective: 1000px;
     transform-style: preserve-3d;
     transform: rotateX(-180deg); 
-
  }
 
  .grid-item.right:hover {
