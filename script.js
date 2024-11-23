@@ -22,3 +22,27 @@ backToTop.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', scrollFunction);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const gridItems = document.querySelectorAll('.grid-item');
+    const isMobile = window.matchMedia('(max-width: 480px)').matches;
+
+    gridItems.forEach(item => {
+        // Check for mobile view
+        if (isMobile) {
+            // Remove links from being clickable
+            const links = item.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                });
+            });
+
+            // Add tap-to-flip functionality
+            item.addEventListener('click', () => {
+                // Toggle the 'flipped' class on tap
+                item.classList.toggle('flipped');
+            });
+        }
+    });
+});

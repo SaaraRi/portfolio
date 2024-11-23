@@ -266,12 +266,9 @@ main section {
     background-color: var(--color-blue);
 }
 
-.grid-item a {
+.grid-container a {
    display: contents;
    cursor: pointer;
-   pointer-events: auto;
-   /*pointer-events: visibleFill;*/
-
 }
 
 /*
@@ -593,6 +590,58 @@ input {
         overflow-x: scroll;
         scroll-snap-align: center;
         scroll-behavior: smooth;
+    }
+
+
+    .grid-item {
+        position: relative;
+        transform: rotateY(0deg);
+        transition: transform 0.5s ease;
+        cursor: pointer;
+        /* Ensure hover effects do not apply on mobile */
+        pointer-events: auto;
+    }
+
+    .grid-item .front,
+    .grid-item .back-left,
+    .grid-item .back-up,
+    .grid-item .back-right,
+    .grid-item .back-down {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.3s;
+    }
+
+    .grid-item .front {
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+
+    .grid-item .back-left,
+    .grid-item .back-up,
+    .grid-item .back-right,
+    .grid-item .back-down {
+        z-index: 1;
+        transform: rotateY(180deg);
+    }
+
+    .grid-item.flipped .front {
+        transform: rotateY(180deg);
+    }
+
+    .grid-item.flipped .back-left,
+    .grid-item.flipped .back-up,
+    .grid-item.flipped .back-right,
+    .grid-item.flipped .back-down {
+        transform: rotateY(0deg);
+    }
+
+    .grid-item:hover {
+        pointer-events: none;
     }
 
     footer {
