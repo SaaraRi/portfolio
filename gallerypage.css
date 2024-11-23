@@ -288,7 +288,6 @@ main section {
     perspective: 1000px;
     transform-style: preserve-3d; 
     transition: transform 1s;
-    pointer-events: auto;
 }
 
 .grid-item.up:hover {
