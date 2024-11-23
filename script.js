@@ -25,24 +25,36 @@ window.addEventListener('scroll', scrollFunction);
 
 document.addEventListener('DOMContentLoaded', () => {
     const gridItems = document.querySelectorAll('.grid-item');
-    const isMobile = window.matchMedia('(max-width: 480px)').matches;
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
     gridItems.forEach(item => {
         // Check for mobile view
         if (isMobile) {
-            // Remove links from being clickable
-            const links = item.querySelectorAll('a');
-            links.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
+            // Handle item 10 separately
+            if (item.id === 'item10') {
+                // Allow item 10 to open its link normally
+                const link = item.querySelector('a');
+                if (link) {
+                    link.addEventListener('click', (e) => {
+                        // Ensure the link opens normally
+                        e.stopPropagation(); // Prevent click on the item itself from interfering
+                    });
+                }
+            } else {
+                // For all other items:
+                // Remove links from being clickable
+                const links = item.querySelectorAll('a');
+                links.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                    });
                 });
-            });
 
-            // Add tap-to-flip functionality
-            item.addEventListener('click', () => {
-                // Toggle the 'flipped' class on tap
-                item.classList.toggle('flipped');
-            });
+                // Add tap-to-flip functionality
+                item.addEventListener('click', () => {
+                    item.classList.toggle('flipped');
+                });
+            }
         }
     });
 });
