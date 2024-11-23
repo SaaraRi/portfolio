@@ -639,14 +639,16 @@ input {
         transform: rotateY(-180deg);
     }
 
-    .grid-item.flipped .front {
+/*    .grid-item.flipped .front {
         transform: rotateY(180deg);
+    }*/
+    .grid-item.flipped .back-up,
+    .grid-item.flipped .back-down {
+        transform: rotateX(0deg);
     }
 
-    .grid-item.flipped .back-left,
-    .grid-item.flipped .back-up,
     .grid-item.flipped .back-right,
-    .grid-item.flipped .back-down {
+    .grid-item.flipped .back-left {
         transform: rotateY(0deg);
     }
 
