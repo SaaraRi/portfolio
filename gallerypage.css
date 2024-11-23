@@ -621,12 +621,12 @@ input {
 
     .grid-item .back-up {
         z-index: 1;
-        transform: rotateY(180deg);
+        transform: rotateX(180deg);
     }
     
     .grid-item .back-down {
         z-index: 1;
-        transform: rotateY(180deg);
+        transform: rotateX(-180deg);
     }
 
     .grid-item .back-right {
@@ -636,7 +636,7 @@ input {
 
     .grid-item .back-left {
         z-index: 1;
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     .grid-item.flipped .front {
