@@ -595,10 +595,14 @@ input {
     .grid-item {
         position: relative;
         transform: rotateY(0deg);
-        transition: transform 0.5s ease;
+        perspective: 1000px;
+        transform-style: preserve-3d; 
+        transition: transform 1s ease;
+        /*transition: transform 0.5s ease*/;
         /*cursor: pointer;*/
-        cursor: auto;
-        pointer-events: auto;
+        /*cursor: default;*/
+        cursor: move;
+        /*pointer-events: auto;*/
     }
 
     .grid-item .front,
@@ -612,7 +616,7 @@ input {
         left: 0;
         width: 100%;
         height: 100%;
-        transition: opacity 0.3s;
+        transition: opacity 0.5s;
     }
 
     /*.grid-item .front {
@@ -622,21 +626,29 @@ input {
 
     .grid-item .back-up {
         z-index: 1;
+        perspective: 1000px;
+        transform-style: preserve-3d;
         transform: rotateX(180deg);
     }
     
     .grid-item .back-down {
         z-index: 1;
+        perspective: 1000px;
+        transform-style: preserve-3d;
         transform: rotateX(-180deg);
     }
 
     .grid-item .back-right {
         z-index: 1;
+        perspective: 1000px;
+        transform-style: preserve-3d;
         transform: rotateY(180deg);
     }
 
     .grid-item .back-left {
         z-index: 1;
+        perspective: 1000px;
+        transform-style: preserve-3d;
         transform: rotateY(-180deg);
     }
 
@@ -645,17 +657,21 @@ input {
     }*/
     .grid-item.flipped .back-up,
     .grid-item.flipped .back-down {
+        perspective: 1000px;
+        transform-style: preserve-3d;
         transform: rotateX(0deg);
     }
 
     .grid-item.flipped .back-right,
     .grid-item.flipped .back-left {
+        perspective: 1000px;
+        transform-style: preserve-3d;
         transform: rotateY(0deg);
     }
 
-    .grid-item:hover {
+    /*.grid-item:hover {
         pointer-events: none;
-    }
+    }*/
 
     footer {
         height: 700px;
