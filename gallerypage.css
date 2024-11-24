@@ -599,22 +599,13 @@ input {
         height: 533px;
         gap: 2.5px;
         perspective: none;
-        /*cursor: pointer;
-        pointer-events: auto;*/
     }
 
     .grid-item {
         position: relative;
-        /*transform: rotateY(0deg);*/
-        /*perspective: 1000px;
-        transform-style: preserve-3d;*/ 
         transition: transform 1s ease;
-        /*transition: transform 0.5s ease*/;
-        /*cursor: pointer;*/
-        /*cursor: default;*/
         cursor: pointer;
         pointer-events: auto;
-        /*pointer-events: auto;*/
     }
 
     .grid-item .front,
@@ -632,53 +623,33 @@ input {
         transition: transform 1s ease;
     }
 
-    /*.grid-item .front {
-        z-index: 2;
-        transform: rotateY(0deg);
-    }*/
-
     .grid-item .back-up {
         z-index: 1;
-        /*perspective: 1000px;
-        transform-style: preserve-3d;*/
         transform: rotateX(180deg);
     }
     
     .grid-item .back-down {
         z-index: 1;
-        /*perspective: 1000px;
-        transform-style: preserve-3d;*/
         transform: rotateX(-180deg);
     }
 
     .grid-item .back-right {
         z-index: 1;
-        /*perspective: 1000px;
-        transform-style: preserve-3d;*/
         transform: rotateY(180deg);
     }
 
     .grid-item .back-left {
         z-index: 1;
-        /*perspective: 1000px;
-        transform-style: preserve-3d;*/
         transform: rotateY(-180deg);
     }
 
-/*    .grid-item.flipped .front {
-        transform: rotateY(180deg);
-    }*/
     .grid-item.flipped .back-up,
     .grid-item.flipped .back-down {
-        /*perspective: 1000px;
-        transform-style: preserve-3d;*/
         transform: rotateX(0deg);
     }
 
     .grid-item.flipped .back-right,
     .grid-item.flipped .back-left {
-        /*perspective: 1000px;
-        transform-style: preserve-3d;*/
         transform: rotateY(0deg);
     }
 
