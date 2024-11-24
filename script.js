@@ -30,6 +30,30 @@ document.addEventListener('DOMContentLoaded', () => {
     gridItems.forEach(item => {
         // Check for mobile view
         if (isMobile) {
+            // Remove links from being clickable
+            const links = item.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
+            });
+
+            // Add tap-to-flip functionality
+            item.addEventListener('click', () => {
+                // Toggle the 'flipped' class on tap
+                item.classList.toggle('flipped');
+            });
+        }
+    });
+});
+
+/*document.addEventListener('DOMContentLoaded', () => {
+    const gridItems = document.querySelectorAll('.grid-item');
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+    gridItems.forEach(item => {
+        // Check for mobile view
+        if (isMobile) {
             // Handle item 10 separately
             if (item.id === 'item10') {
                 // Allow item 10 to open its link normally
@@ -57,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-});
+});*/
 
 item.addEventListener('click', () => {
     if (!item.classList.contains('flipping')) {
