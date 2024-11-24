@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Check for mobile view
         if (isMobile) {
             // Handle item 10 separately
-            if (item.id === 'item10'|| 'item18' || 'item20' || 'item22') {
+            if (item.id === 'item10'|| item.id === 'item18' || item.id === 'item20' || item.id === 'item22') {
                 // Allow item 10 to open its link normally
                 const link = item.querySelector('a');
                 if (link) {
