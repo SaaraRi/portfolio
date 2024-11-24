@@ -58,3 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+item.addEventListener('click', () => {
+    if (!item.classList.contains('flipping')) {
+        item.classList.add('flipping');
+        item.classList.toggle('flipped');
+        setTimeout(() => item.classList.remove('flipping'), 500); // Match your CSS transition time
+    }
+});

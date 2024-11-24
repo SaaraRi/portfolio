@@ -594,14 +594,15 @@ input {
 
     .grid-item {
         position: relative;
-        transform: rotateY(0deg);
+        /*transform: rotateY(0deg);*/
         perspective: 1000px;
         transform-style: preserve-3d; 
-        transition: transform 1s ease;
+        transition: transform 0.5s ease;
         /*transition: transform 0.5s ease*/;
         /*cursor: pointer;*/
         /*cursor: default;*/
-        cursor: move;
+        cursor: pointer;
+        pointer-events: auto;
         /*pointer-events: auto;*/
     }
 
@@ -616,7 +617,7 @@ input {
         left: 0;
         width: 100%;
         height: 100%;
-        transition: opacity 0.5s;
+        transition: opacity 0.3s;
     }
 
     /*.grid-item .front {
@@ -669,9 +670,9 @@ input {
         transform: rotateY(0deg);
     }
 
-    /*.grid-item:hover {
+    .grid-item:hover {
         pointer-events: none;
-    }*/
+    }
 
     footer {
         height: 700px;
