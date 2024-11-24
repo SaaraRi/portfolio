@@ -592,6 +592,14 @@ input {
         scroll-behavior: smooth;
     }
 
+    .grid-container {
+        display: grid;
+        position: relative;
+        width: 529px;
+        height: 533px;
+        perspective: none;
+    }
+
     .grid-item {
         position: relative;
         /*transform: rotateY(0deg);*/
