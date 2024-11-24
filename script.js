@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-});*/
+}); || item.id === 'item18' || item.id === 'item20' || item.id === 'item22'*/
 
 document.addEventListener('DOMContentLoaded', () => {
     const gridItems = document.querySelectorAll('.grid-item');
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Check for mobile view
         if (isMobile) {
             // Handle item 10 separately
-            if (item.id === 'item10'|| item.id === 'item18' || item.id === 'item20' || item.id === 'item22') {
+            if (item.id === 'item10') {
                 // Allow item 10 to open its link normally
                 const link = item.querySelector('a');
                 if (link) {
@@ -84,10 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-item.addEventListener('click', () => {
+/*item.addEventListener('click', () => {
     if (!item.classList.contains('flipping')) {
         item.classList.add('flipping');
         item.classList.toggle('flipped');
         setTimeout(() => item.classList.remove('flipping'), 500); // Match your CSS transition time
     }
-});
+});*/
