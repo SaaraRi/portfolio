@@ -23,6 +23,7 @@ backToTop.addEventListener('click', () => {
 
 window.addEventListener('scroll', scrollFunction);
 
+/*
 document.addEventListener('DOMContentLoaded', () => {
     const gridItems = document.querySelectorAll('.grid-item');
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
@@ -45,9 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-});
+});*/
 
-/*document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const gridItems = document.querySelectorAll('.grid-item');
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Check for mobile view
         if (isMobile) {
             // Handle item 10 separately
-            if (item.id === 'item10') {
+            if (item.id === 'item10'|| 'item18' || 'item20' || 'item22') {
                 // Allow item 10 to open its link normally
                 const link = item.querySelector('a');
                 if (link) {
@@ -81,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-});*/
+});
 
 item.addEventListener('click', () => {
     if (!item.classList.contains('flipping')) {
