@@ -310,6 +310,7 @@ main section {
     font-family: var(--font-grid);
     font-size: 20px;
     text-align: center;
+    text-wrap: nowrap;
     /*text-justify: inter-word;*/
 }
 
@@ -318,6 +319,7 @@ main section {
     rotate: 180deg;
     text-align: center;
     /*text-justify: inter-word;*/
+    text-wrap: nowrap;
     padding: 2rem 0.5rem;
 }
 
@@ -713,7 +715,8 @@ input {
 
     #item1 p {
         font-size: 12px;
-        padding: 1rem;
+        padding: 0.2rem;
+        text-wrap: nowrap;
     }
 
     #item2 p {
@@ -722,12 +725,14 @@ input {
 
     #item5 p {
         font-size: 8.5px; 
+        line-height: 10px;
         padding: 0.2rem;
     }
 
     #item8 p,
     #item9 p {
         font-size: 7px;
+        line-height: 8px;
         padding: 0 0.25rem;
     }
 
@@ -740,16 +745,18 @@ input {
     }
 
     .grid-text-style3 {
-        padding: 1rem 0.25rem;
+        padding: 0.5rem;
     }
     
     #item14 p {
         font-size: 8px; 
         padding: 0.5rem;
+        text-wrap: nowrap;
     }
 
     .grid-text-style2 {
         font-size: 8px; 
+        text-wrap: nowrap;
     }
 
     #item15 p {
@@ -758,7 +765,7 @@ input {
 
     #item23 p {
         font-size: 5px;
-        line-height: 0.5rem;
+        line-height: 0.7rem;
         padding: 0.1rem;
     }
 
