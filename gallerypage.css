@@ -597,6 +597,7 @@ input {
         position: relative;
         width: 529px;
         height: 533px;
+        gap: 2.5px;
         perspective: none;
     }
 
@@ -625,8 +626,8 @@ input {
         left: 0;
         width: 100%;
         height: 100%;
-        /*transition: opacity 0.3s;*/
-        transition: transform 0.5s ease;
+        transition: opacity 0.3s;
+        /*transition: transform 0.5s ease;*/
     }
 
     /*.grid-item .front {
