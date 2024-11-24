@@ -595,8 +595,8 @@ input {
     .grid-item {
         position: relative;
         /*transform: rotateY(0deg);*/
-        perspective: 1000px;
-        transform-style: preserve-3d; 
+        /*perspective: 1000px;
+        transform-style: preserve-3d;*/ 
         transition: transform 0.5s ease;
         /*transition: transform 0.5s ease*/;
         /*cursor: pointer;*/
@@ -618,6 +618,7 @@ input {
         width: 100%;
         height: 100%;
         /*transition: opacity 0.3s;*/
+        transition: transform 0.5s ease;
     }
 
     /*.grid-item .front {
