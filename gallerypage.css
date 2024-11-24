@@ -138,8 +138,22 @@ main section {
     grid-area: 1 / 1 / span 3 / span 1;
 }
 
+#item1 p {
+    font-family: var(--font-grid2); 
+    font-size: 24px; 
+    padding: 2rem;
+    /*text-align: center;
+    text-justify: auto;*/
+}
 #item2 {
     grid-area: 1 / 2 / span 1 / span 2;
+}
+
+#item2 p {
+    font-family: var(--font-grid2); 
+    color: var(--color-white); 
+    font-size: 30px; 
+    text-align: center;
 }
 
 #item3 {
@@ -152,6 +166,11 @@ main section {
 
 #item5 {
     grid-area: 1 / 6 / span 3 / span 2;
+}
+
+#item5 p {
+    font-size: 17px;
+    padding: 0.4rem
 }
 
 #item6 {
@@ -170,12 +189,28 @@ main section {
     grid-area: 3 / 5 / span 1 / span 1;
 }
 
+#item8 p,
+#item9 p {
+    font-size: 14px;
+    padding: 0 0.5rem;
+}
+
 #item10 {
     grid-area: 4 / 1 / span 2 / span 1;
 }
 
+#item10 a {
+    color: var(--color-yellow); 
+    font-family: var(--font-grid); 
+    font-size: 34px;
+}
+
 #item11 {
     grid-area: 4 / 2 / span 1 / span 2;
+}
+
+#item11 p {
+    font-size: 17px; 
 }
 
 #item12 {
@@ -190,8 +225,18 @@ main section {
     grid-area: 4 / 6 / span 3 / span 1;
 }
 
+#item14 p {
+    font-size: 20px; 
+    padding: 4.5rem 1.5rem;
+}
+
 #item15 {
     grid-area: 4 / 7 / span 3 / span 1;
+}
+
+#item15 p {
+    font-family: var(--font-grid2); 
+    padding: 2.5rem 0.2rem;
 }
 
 #item16 {
@@ -226,6 +271,12 @@ main section {
     grid-area: 9 / 3 / span 1 / span 2;
 }
 
+#item23 p {
+    font-size: 14px; 
+    line-height: 1.5rem;
+    padding: 0.4rem;
+}
+
 #item24 {
     grid-area: 7 / 4 / span 2 / span 1;
 }
@@ -238,8 +289,36 @@ main section {
     grid-area: 9 / 5 / span 1 / span 1;
 }
 
+#item26 p {
+    font-size: 16px; 
+    text-align: center;
+    padding: 0.4rem;
+}
+
 #item27 {
     grid-area: 7 / 6 / span 3 / span 2;
+}
+
+.grid-text-style {
+    font-family: var(--font-grid);
+    font-weight: bolder;
+    text-justify: inter-word;
+}
+
+.grid-text-style2 {
+    writing-mode: vertical-rl;
+    font-family: var(--font-grid);
+    font-size: 20px;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.grid-text-style3 {
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    text-align: center;
+    text-justify: inter-word;
+    padding: 2rem 0.5rem;
 }
 
 .box-black {
@@ -297,7 +376,7 @@ main section {
     perspective: 1000px;
     transform-style: preserve-3d;
     transform: rotateX(-180deg); 
- }
+}
 
  .grid-item.right:hover {
     perspective: 1000px;
@@ -376,32 +455,6 @@ main section {
     transform: rotateY(-180deg);
     backface-visibility: hidden;
     z-index: 1;
-}
-
-.grid-text-style {
-    font-family: var(--font-grid);
-    font-size: 14px;
-    font-weight: bolder;
-    text-justify: inter-word;
-    padding: 0.4rem;
-}
-
-.grid-text-style2 {
-    writing-mode: vertical-rl;
-    font-family: var(--font-grid);
-    font-size: 20px;
-    text-align: center;
-    text-justify: inter-word;
-    padding: 0.5rem;
-}
-
-.grid-text-style3 {
-    font-family: var(--font-grid2);
-    writing-mode: vertical-lr;
-    rotate: 180deg;
-    text-align: center;
-    text-justify: inter-word;
-    padding: 2rem 0.3rem;
 }
 
 button {
@@ -598,6 +651,7 @@ input {
         width: 529px;
         height: 533px;
         gap: 2.5px;
+        border: var(--color-dark) solid 3.5px;
         perspective: none;
     }
 
@@ -657,6 +711,38 @@ input {
         pointer-events: none;
     }
 
+    #item1 p {
+        font-size: 12px;
+    }
+
+    #item2 p {
+        font-size: 15px;
+    }
+
+    #item5 p,
+    #item11 p {
+        font-size: 8.5px; 
+    }
+
+    #item8 p,
+    #item9 p,
+    #item23 p {
+        font-size: 7px;
+    }
+
+    #item10 a {
+        font-size: 17px;
+    }
+   
+    #item14 p,
+    .grid-text-style2 {
+        font-size: 10px; 
+    }
+
+    #item26 p {
+        font-size: 8px; 
+    }
+    
     footer {
         height: 700px;
         margin-top: 6rem;
