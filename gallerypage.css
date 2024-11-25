@@ -882,6 +882,132 @@ input {
         scroll-behavior: smooth;
     }
 
+    .grid-container {
+        display: grid;
+        position: relative;
+        width: 529px;
+        height: 533px;
+        gap: 2.5px;
+        border: var(--color-dark) solid 5px;
+        perspective: none;
+    }
+
+    .grid-item {
+        position: relative;
+        transition: transform 1s ease;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .grid-item .front,
+    .grid-item .back-left,
+    .grid-item .back-up,
+    .grid-item .back-right,
+    .grid-item .back-down {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease;
+    }
+
+    .grid-item .back-up {
+        z-index: 1;
+        transform: rotateX(180deg);
+    }
+    
+    .grid-item .back-down {
+        z-index: 1;
+        transform: rotateX(-180deg);
+    }
+
+    .grid-item .back-right {
+        z-index: 1;
+        transform: rotateY(180deg);
+    }
+
+    .grid-item .back-left {
+        z-index: 1;
+        transform: rotateY(-180deg);
+    }
+
+    .grid-item.flipped .back-up,
+    .grid-item.flipped .back-down {
+        transform: rotateX(0deg);
+    }
+
+    .grid-item.flipped .back-right,
+    .grid-item.flipped .back-left {
+        transform: rotateY(0deg);
+    }
+
+    .grid-item:hover {
+        pointer-events: none;
+    }
+
+    .grid-text-style3 {
+        padding: 1rem 0.3rem;
+    }
+
+    #item1 p {
+        font-size: 14px;
+        padding: 0.3rem;
+        text-wrap: nowrap;
+    }
+
+    #item2 p {
+        font-size: 16px;
+    }
+
+    #item5 p {
+        font-size: 10px; 
+        line-height: 11px;
+        padding: 0.3rem;
+    }
+
+    #item8 p,
+    #item9 p {
+        font-size: 8px;
+        line-height: 9px;
+        padding: 0.05rem 0.2rem;
+    }
+
+    #item10 a {
+        font-size: 18px;
+    }
+
+    #item11 p {
+        font-size: 10px;
+    }
+    
+    .grid-text-style2 {
+        font-size: 10px; 
+        text-wrap: nowrap;
+    }
+
+    #item15 p {
+        padding: 1.1rem 0.08rem;
+    }
+
+    #item14 p {
+        font-size: 12px; 
+        padding: 1.7rem 0.5rem;
+        text-wrap: nowrap;
+    }
+
+    #item23 p {
+        font-size: 7px;
+        line-height: 11px;
+        padding: 0.2rem 0.7rem;
+    }
+
+    #item26 p {
+        font-size: 8px;
+        padding: 0.1rem 0.2rem; 
+    }
+
     footer {
         height: 600px;
         margin-top: 6rem;
