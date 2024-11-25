@@ -8,7 +8,7 @@
     --font-title: "Londrina Solid", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --font-text: "Belanosima", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --font-footer: "Patrick Hand", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --font-grid: "Kiwi Maru", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-grid: "Righteous", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --font-grid2: "Playwrite HR", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --color-dark:  #36373B;
     --color-light: #fdffff;
@@ -169,8 +169,8 @@ main section {
 }
 
 #item5 p {
-    font-size: 17px;
-    padding: 0.4rem
+    font-size: 19px;
+    padding: 0.5rem
 }
 
 #item6 {
@@ -191,7 +191,7 @@ main section {
 
 #item8 p,
 #item9 p {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 0.5rem;
 }
 
@@ -210,7 +210,7 @@ main section {
 }
 
 #item11 p {
-    font-size: 17px; 
+    font-size: 20px; 
 }
 
 #item12 {
@@ -226,8 +226,8 @@ main section {
 }
 
 #item14 p {
-    font-size: 20px; 
-    padding: 4.5rem 1.5rem;
+    font-size: 24px; 
+    padding: 3.5rem 1rem;
 }
 
 #item15 {
@@ -272,9 +272,9 @@ main section {
 }
 
 #item23 p {
-    font-size: 14px; 
+    font-size: 15px; 
     line-height: 1.5rem;
-    padding: 0.4rem;
+    padding: 0.5rem 0.7rem;
 }
 
 #item24 {
@@ -290,9 +290,9 @@ main section {
 }
 
 #item26 p {
-    font-size: 16px; 
+    font-size: 18px; 
     text-align: center;
-    padding: 0.4rem;
+    padding: 0.5rem;
 }
 
 #item27 {
@@ -310,7 +310,7 @@ main section {
     font-family: var(--font-grid);
     font-size: 20px;
     text-align: center;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     /*text-justify: inter-word;*/
 }
 
