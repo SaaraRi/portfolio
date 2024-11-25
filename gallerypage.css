@@ -726,7 +726,7 @@ input {
     #item5 p {
         font-size: 9px; 
         line-height: 11px;
-        padding: 0.25rem 0.3rem;
+        padding: 0.3rem;
     }
 
     #item8 p,
@@ -750,7 +750,7 @@ input {
     }
 
     #item15 p {
-        padding: 1.1rem 0.15rem;
+        padding: 1.1rem 0.1rem;
     }
 
     #item14 p {
@@ -762,7 +762,7 @@ input {
     #item23 p {
         font-size: 7px;
         line-height: 11px;
-        padding: 0.2rem;
+        padding: 0.2rem 0.5rem;
     }
 
     #item26 p {
