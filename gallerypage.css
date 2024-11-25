@@ -726,7 +726,7 @@ input {
     #item5 p {
         font-size: 10px; 
         line-height: 11px;
-        padding: 0.4rem;
+        padding: 0.3rem 0.4rem;
     }
 
     #item8 p,
