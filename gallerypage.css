@@ -724,7 +724,7 @@ input {
     }
 
     #item5 p {
-        font-size: 19px; 
+        font-size: 9px; 
         line-height: 11px;
         padding: 0.1rem 0.3rem;
     }
@@ -741,29 +741,29 @@ input {
     }
 
     #item11 p {
-        font-size: 9px;
+        font-size: 10px;
         padding: 0.1rem;
     }
     
     .grid-text-style2 {
-        font-size: 12px; 
+        font-size: 10px; 
         text-wrap: nowrap;
     }
 
     #item15 p {
-        padding: 1.5rem 0.1rem;
+        padding: 1rem 0.1rem;
     }
 
     #item14 p {
         font-size: 12px; 
-        padding: 1.5rem 0.5rem;
+        padding: 1.7rem 0.5rem;
         text-wrap: nowrap;
     }
 
     #item23 p {
         font-size: 7px;
-        line-height: 9px;
-        padding: 0.1rem;
+        line-height: 10px;
+        padding: 0.2rem;
     }
 
     #item26 p {
