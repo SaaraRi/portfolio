@@ -642,7 +642,7 @@ input {
         width: 529px;
         height: 533px;
         gap: 2.5px;
-        border: var(--color-dark) solid 3.5px;
+        border: var(--color-dark) solid 5px;
         perspective: none;
     }
 
