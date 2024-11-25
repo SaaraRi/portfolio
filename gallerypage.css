@@ -724,16 +724,16 @@ input {
     }
 
     #item5 p {
-        font-size: 10px; 
-        line-height: 12px;
-        padding: 0.1rem 0.4rem;
+        font-size: 19px; 
+        line-height: 11px;
+        padding: 0.1rem 0.3rem;
     }
 
     #item8 p,
     #item9 p {
         font-size: 8px;
         line-height: 9px;
-        padding: 0.05rem 0.1rem;
+        padding: 0.05rem 0.2rem;
     }
 
     #item10 a {
@@ -742,27 +742,27 @@ input {
 
     #item11 p {
         font-size: 9px;
-        padding: 0.2rem;
+        padding: 0.1rem;
     }
     
     .grid-text-style2 {
-        font-size: 8px; 
-        text-wrap: nowrap;
-    }
-
-    #item14 p {
         font-size: 12px; 
-        padding: 2rem 0.6rem;
         text-wrap: nowrap;
     }
 
     #item15 p {
-        padding: 0.1rem;
+        padding: 1.5rem 0.1rem;
+    }
+
+    #item14 p {
+        font-size: 12px; 
+        padding: 1.5rem 0.5rem;
+        text-wrap: nowrap;
     }
 
     #item23 p {
-        font-size: 8px;
-        line-height: 10px;
+        font-size: 7px;
+        line-height: 9px;
         padding: 0.1rem;
     }
 
