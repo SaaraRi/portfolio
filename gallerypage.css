@@ -301,8 +301,6 @@ main section {
 
 .grid-text-style {
     font-family: var(--font-grid);
-    font-weight: bolder;
-    /*text-justify: inter-word;*/
 }
 
 .grid-text-style2 {
@@ -311,15 +309,13 @@ main section {
     font-size: 20px;
     text-align: center;
     text-wrap: wrap;
-    /*text-justify: inter-word;*/
 }
 
 .grid-text-style3 {
     writing-mode: vertical-lr;
     rotate: 180deg;
     text-align: center;
-    /*text-justify: inter-word;*/
-    text-wrap: nowrap;
+    /*text-wrap: nowrap;*/
     padding: 2rem 0.5rem;
 }
 
@@ -714,49 +710,50 @@ input {
     }
 
     #item1 p {
-        font-size: 12px;
-        padding: 0.2rem;
-        text-wrap: nowrap;
+        font-size: 14px;
+        padding: 1rem 0.3rem;
+        /*text-wrap: nowrap;*/
     }
 
     #item2 p {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     #item5 p {
-        font-size: 8.5px; 
-        line-height: 10px;
+        font-size: 10px; 
+        /*line-height: 10px;*/
         padding: 0.2rem;
     }
 
     #item8 p,
     #item9 p {
-        font-size: 7px;
-        line-height: 8px;
+        font-size: 8px;
+        line-height: 8.5px;
         padding: 0 0.25rem;
     }
 
     #item10 a {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     #item11 p {
-        font-size: 8.5px;
+        font-size: 8px;
+        padding: 0.3rem;
     }
 
     .grid-text-style3 {
-        padding: 0.5rem;
+        padding: 1rem 0.3rem;
     }
     
     #item14 p {
-        font-size: 8px; 
-        padding: 0.5rem;
-        text-wrap: nowrap;
+        font-size: 12px; 
+        padding: 1rem 0.5rem;
+        /*text-wrap: nowrap;*/
     }
 
     .grid-text-style2 {
         font-size: 8px; 
-        text-wrap: nowrap;
+        text-wrap: wrap;
     }
 
     #item15 p {
@@ -764,14 +761,14 @@ input {
     }
 
     #item23 p {
-        font-size: 5px;
+        font-size: 8px;
         line-height: 0.7rem;
         padding: 0.1rem;
     }
 
     #item26 p {
-        font-size: 6px;
-        padding: 0.1rem; 
+        font-size: 8px;
+        padding: 0.2rem; 
     }
     
     footer {
