@@ -181,6 +181,11 @@ h3 {
     box-shadow: var(--shadow-small);
 }
 
+.project-image:hover {
+    scale: 105%;
+}
+
+
 .skills-container {
     color: var(--color-dark);
     padding: 3rem;
