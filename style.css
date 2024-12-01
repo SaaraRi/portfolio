@@ -182,7 +182,8 @@ h3 {
 }
 
 .project-image:hover {
-    scale: 105%;
+    scale: 108%;
+    transition: all 0.1s ease-in-out; 
 }
 
 
