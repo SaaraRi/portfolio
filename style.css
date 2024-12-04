@@ -159,10 +159,14 @@ h3 {
     max-height: 515px;
     max-width: 400px;
     margin-bottom: 2rem;
-    padding: 2rem;
+    padding: 2.3rem;
     border: var(--color-gray) solid 0.5px;
     border-radius: 3px;
     box-shadow: var(--shadow-big);
+}
+
+.project-card p {
+    margin: 0 0.5rem;
 }
 
 .project-image {
@@ -174,16 +178,16 @@ h3 {
     max-width:230px;
     object-fit: cover;
     overflow: clip;
-    margin: 1.2rem auto;
+    margin: 1.1rem 0;
     padding: 0;     
-    border: #36373B solid 1px;
+    border: #36373B solid 0.5px;
     border-radius: 3px;
     box-shadow: var(--shadow-small);
 }
 
 .project-image:hover {
     scale: 108%;
-    transition: all 0.1s ease-in-out; 
+    transition: all 0.1s ease-out; 
 }
 
 
