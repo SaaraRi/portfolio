@@ -157,16 +157,12 @@ h3 {
     text-align: start;
     line-height: 1.2;
     max-height: 515px;
-    max-width: 400px;
+    max-width: 500px;
     margin-bottom: 2rem;
-    padding: 2.3rem;
+    padding: 2.5rem;
     border: var(--color-gray) solid 0.5px;
     border-radius: 3px;
     box-shadow: var(--shadow-big);
-}
-
-.project-card p {
-    margin: 0 0.5rem;
 }
 
 .project-image {
@@ -175,7 +171,7 @@ h3 {
     align-items: start;
     justify-content: center;
     max-height: 210px;
-    max-width:230px;
+    max-width:240px;
     object-fit: cover;
     overflow: clip;
     margin: 1.1rem 0;
