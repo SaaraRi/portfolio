@@ -142,9 +142,8 @@ main section {
     font-family: var(--font-grid2); 
     font-size: 24px; 
     padding: 2rem;
-    /*text-align: center;
-    text-justify: auto;*/
 }
+
 #item2 {
     grid-area: 1 / 2 / span 1 / span 2;
 }
@@ -497,9 +496,10 @@ footer {
 .socials-postit p {
     position: absolute;
     color: var(--color-dark);
-    font-size: 24px;
+    font-family: var(--font-footer);
+    font-size: 28px;
     top: 4rem;
-    left: 3rem;
+    left: 2.9rem;
     z-index: 2;
 }
  
@@ -558,6 +558,7 @@ textarea {
     box-sizing: border-box;
     border-collapse: collapse;
     border: none;
+    padding: 0.5rem;
     height: 190px;
     width: 100%;
     overflow-y: scroll;
@@ -570,7 +571,7 @@ input {
     background-color: transparent;
     border-collapse: collapse;
     border: none;
-    padding: 0.6rem;
+    padding: 0.5rem;
     width: 49%;
 }
 
@@ -778,15 +779,15 @@ input {
     }
     
     .socials-postit p {
-        font-size: 18px;
-        top: 0.5rem;
-        left: 20%;
+        font-size: 24px;
+        top: 0.1rem;
+        left: 18%;
         margin-bottom: 1rem;
     }
      
     #linkedin {
         top: 2.5rem;
-        left: 25%;
+        left: 20%;
     }
      
     #github {
@@ -1024,15 +1025,15 @@ input {
     }
     
     .socials-postit p {
-        font-size: 18px;
-        top: 0.5rem;
-        left: 30%;
+        font-size: 24px;
+        top: 0.1rem;
+        left: 28%;
         margin-bottom: 1rem;
     }
      
     #linkedin {
         top: 2.5rem;
-        left: 25%;
+        left: 28%;
     }
      
     #github {
@@ -1078,7 +1079,6 @@ input {
     #copyright {
         left: 2rem;
     }
-    
 }
 
 @media only screen and (min-width: 821px) and (max-width: 1024px) {
@@ -1132,7 +1132,7 @@ input {
     }
     
     .socials-postit p {
-        font-size: 18px;
+        font-size: 22px;
         top: 2rem;
         left: 15%;
     }
@@ -1170,7 +1170,6 @@ input {
         top: 0;
         padding: 0.5rem;
     }
-
 }
 
 nav ul.responsive {
