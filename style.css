@@ -183,7 +183,9 @@ h3 {
 
 .project-image:hover {
     scale: 108%;
-    transition: all 0.1s ease-out; 
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(1, 1.2, 1.2, 1);
+    transition-duration: 300ms;
 }
 
 
@@ -348,6 +350,9 @@ button {
     box-shadow: var(--shadow-small);
     padding: 1rem 2rem;
     cursor: pointer;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
 }
 
 button:hover {
